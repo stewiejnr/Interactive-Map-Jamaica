@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Interactive Map Jamaica</title>
+        <style type="text/css">
+            body { margin: 0; }
+			#close:hover,#close2:hover {
+				background: #00d9ff;
+			}
+			.hover:hover { width: 150px; height: 150px; }
+			#shade2, #modal2 {display: none; }
+            #shade, #modal { display: none; }
+            #shade,#shade2 { position: fixed; z-index: 100; top: 0; left: 0; width: 100%; height: 100%; }
+            #modal,#modal2 { position: fixed; z-index: 101; top: 25%; left: 25%; width: 30%; border: 1px solid ;background-color: white;padding: 20px;}
+            #shade,#shade2 { background: silver; opacity: 0.75; filter: alpha(opacity=50); }
+			#modal {border-radius: 7px;
+					background: -moz-linear-gradient(#fff, #999);
+					background: -webkit-linear-gradient(#fff, #999);
+					background: -o-linear-gradient(#fff, #999);
+			}
+		</style>
+    </head>
+    <body>
+		<img id="Image-Maps-Com-image-maps-2015-04-13-101803" src="http://www.image-maps.com/m/private/0/hkqccjdibkdpia04cd1hqbv353_interactive-map-for-blueprint-1366x768-2.png" border="0" width="1366" height="768" orgWidth="1366" orgHeight="768" usemap="#image-maps-2015-04-13-101803" alt="" />
+		<map name="image-maps-2015-04-13-101803" id="ImageMapsCom-image-maps-2015-04-13-101803">
+		<area shape="rect" coords="1364,766,1366,768" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_49340" />
+		<area id="parish3" alt="Saint James Parish" title="Saint James" shape="poly" coords="431,156,412,305,343,326,339.00000076293946,316,344.00000076293946,315,348.00000076293946,312,351.00000076293946,308,350.00000076293946,304,348.00000076293946,300,345.00000076293946,294,340.00000076293946,286,340.00000076293946,284,337.00000076293946,282,335.00000076293946,280,332.00000076293946,276,330.00000076293946,271,323.00000076293946,254,316.00000076293946,247,311.00000076293946,241,308.00000076293946,236,304.00000076293946,228,301.00000076293946,222,301.00000076293946,211,287.00000076293946,201,286.00000076293946,197,288.00000076293946,193,290.00000076293946,191,294.00000076293946,190,298.00000076293946,189,308.00000076293946,192,316.00000076293946,193,323.00000076293946,195,324.00000076293946,192,322.00000076293946,188,322.00000076293946,184,325.00000076293946,181,324.00000076293946,178,324.00000076293946,173,324.00000076293946,168,326.00000076293946,162,331.00000076293946,160,340.00000076293946,155,345.00000076293946,151,350.00000076293946,150,356.00000076293946,150,363.00000076293946,148,370.00000076293946,147,381.00000076293946,148,395.00000076293946,150,406.00000076293946,153,419.00000076293946,155,426.00000076293946,154" style="outline:none;" target="_self" onclick="getdata()" data-maphilight='St. James ' />
+		<area id="parish4" alt="Trelawny Parish" title="Trelawny" shape="poly" coords="430,155.00000508626303,412,305.00000508626306,484,315,495,309,505,307,516,307,526,309,536,314,543,318,549,325,557,331,564,332,591,229,588,222,587,214,587,205,587,197,587,193,580,188.00000254313153,580,183.00000254313153,582,181.00000254313153,581,177.00000254313153,580,174.00000254313153,576,172.00000254313153,573,171.00000254313153,568,172.00000254313153,566,174.00000254313153,558,171.00000254313153,555,170.00000254313153,553,171.00000254313153" style="outline:none;" target="_self" onclick="getdatas()"   data-maphilight='Trelawny' />
+		</map>
+	
+	    
+		<div id="shade2"></div>
+        <div id="modal2">
+			<button style="position: relative;float: right;top: -30px;right: -30px;width: 30px;height: 30px;border-radius: 20px;" id="close2"><span style="font-size: 16px;">X</span></button>
+            <p>Parish: Trelawny</p>
+			<p>Total # of Projects: 2</p>
+			<p>Current Projects:
+				<p><a style="text-decoration: none;" href="http://islandbuzzjamaica.com/2010/12/08/news-updates-historic-falmouth-cruise-port-to-expand-jamaicas-cruise-ship-capabilities/"><img class="hover" src="thumbs/image2_p2.jpg" alt='Port Expansion' height="40" width="40" /><span style="align: top;vertical-align: top;padding-left: 5px;">Port Expansion</span></a></p>
+				<p><a style="text-decoration: none;" href="http://jis.gov.jm/work-completed-13-8m-hectors-river-project-trelawny/"><img class="hover" src="thumbs/image1_p2.jpg" alt='Port Expansion' height="40" width="40" /><span style="align: top;vertical-align: top;padding-left: 5px;">Hector's River Project</span></a></p>			
+			</p>
+		</div>
+		
+        <div id="shade"></div>
+        <div id="modal">
+			<button style="float: right;" id="close">X</button>
+            <p>Parish: St. James</p>
+			<p>Total # of Projects: 4</p>
+			<p>Current Projects:
+				<p><a style="text-decoration: none;" href="http://www.mbjairport.com/about-mbj"><img class="hover" src="thumbs/image1_p1.jpg" alt='Port Expansion' height="40" width="40" /><span style="align: top;vertical-align: top;padding-left: 5px;">Sangster Intl. Airport Expansion</span></a></p>
+				<p><a style="text-decoration: none;" href="http://www.jbdc.net/special-projects/47-international/124-kingston-urban-renewal-project-kurp"><img class="hover" src="thumbs/image2_p1.jpg" alt='Port Expansion' height="40" width="40" /><span style="align: top;vertical-align: top;padding-left: 5px;">Urban Renewal Project</span></a></p>
+				<p><a style="text-decoration: none;" href="http://jamaica-gleaner.com/article/news/20150329/major-road-repair-project-announced-ahead-obamas-visit"><img class="hover" src="thumbs/image3_p1.jpg" alt='Port Expansion' height="40" width="40" /><span style="align: top;vertical-align: top;padding-left: 5px;">Road fixing</span></a></p>
+				<p><a style="text-decoration: none;" href="http://water.epa.gov/polwaste/npdes/swbmp/Storm-Drain-System-Cleaning.cfm"><img class="hover" src="thumbs/image4_p1.jpg" alt='Port Expansion' height="40" width="40" /><span style="align: top;vertical-align: top;padding-left: 5px;">Drain Cleaning</span></a></p>
+			</p>
+        </div>
+        <!-- 
+        <p>
+            <button id="start">Start</button>
+        </p>  -->
+        <script type="text/javascript">
+            var modal= document.getElementById('modal');
+            var shade= document.getElementById('shade');
+			
+           /* document.getElementById('start').onclick= function() {
+                modal.style.display=shade.style.display= 'block';
+            }; */
+			function getdata() {
+				modal.style.display=shade.style.display= 'block';
+			}
+			
+			function getdatas() {
+				modal2.style.display=shade2.style.display= 'block';
+			}
+            document.getElementById('close').onclick= function() {
+                modal.style.display=shade.style.display= 'none';
+            };
+			
+			document.getElementById('close2').onclick= function() {
+                modal2.style.display=shade2.style.display= 'none';
+            }; 
+
+            // This code is a workaround for IE6's lack of support for the
+            // position: fixed style.
+            //
+            if (!('maxHeight' in document.body.style)) {
+                function modalsize() {
+                    var top= document.documentElement.scrollTop;
+                    var winsize= document.documentElement.offsetHeight;
+                    var docsize= document.documentElement.scrollHeight;
+                    shade.style.height= Math.max(winsize, docsize)+'px';
+                    modal.style.top= top+Math.floor(winsize/3)+'px';
+                };
+                modal.style.position=shade.style.position= 'absolute';
+                window.onscroll=window.onresize= modalsize;
+                modalsize();
+            }
+        </script>
+
+    </body>
+</html>
+

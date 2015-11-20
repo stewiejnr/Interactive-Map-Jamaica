@@ -1,0 +1,118 @@
+body { margin: 0; }
+
+#close:hover,#close2:hover, #close3:hover {
+	background: #00d9ff;
+}
+.hover:hover { 
+	width: 150px; 
+	height: 150px; 
+}
+
+li {
+	line-height: 150%;
+	padding-bottom: 3px;
+}
+
+#shade, #modal, #shade2, #modal2, #modal3, #shade3 { 
+	display: none; 
+}
+#shade,#shade2,#shade3 { 
+	position: fixed; 
+	z-index: 100; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+#modal,#modal2 { 
+	position: fixed; 
+	z-index: 101; 
+	top: 8%; 
+	left: 25%; 
+	width: 60%; 
+	border: 1px solid #999;
+	background-color: white;
+	padding: 20px;
+}
+#modal3 {
+	position: fixed;
+	z-index: 101; 
+	top: 10%; 
+	left:10%; 
+	width: 80%;
+	border: 1px solid #999;
+	background-color: white;
+	padding: 20px; 
+}
+
+#shade,#shade2,#shade3 { 
+	background: silver; 
+	opacity: 0.75; 
+	filter: alpha(opacity=50); 
+}
+
+#modal, #modal2, #modal3 {border-radius: 7px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+label { 
+	display: block;
+	width: 200px; 
+	font-size: 18px;
+	padding: 5px;
+}
+
+input, select { 
+	font-size: 18px; 
+	padding: 5px; 
+}
+
+table td { padding: 5px; 
+	font-size: 12pt; 
+	font-family: Verdana, Geneva, sans-serif;
+	vertical-align: top;
+	
+}
+
+#td3 {
+	width: 120px;
+}
+
+table th { padding: 5px; 
+	background: #ADD8E6;
+	color: #000; 
+	font-size: 15pt; 
+	font-family: Tahoma, Geneva, sans-serif
+}
+
+div#p_summary p {
+  
+}
+
+div#p_summary {
+	display: inline;
+	overflow: hidden;
+	clear: both;
+}
+
+#container0 {
+	width: 380px;
+	/* border: 1px solid black; */
+	float: left;
+	border-right: 5px;
+}
+
+#container1 {
+	width: 380px;
+	/* border: 1px solid black; * /
+	float: left;
+	border-right: 5px;
+	
+}
+#container2 {
+	width: 380px;
+	/* border: 1px solid black; */
+	float: left;
+}
